@@ -22,12 +22,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             latexmk \
-            latexindent \
             chktex \
             texlive-latex-recommended \
             texlive-latex-extra \
             texlive-lang-european \
-            texlive-fonts-recommended
+            texlive-fonts-recommended \
+            texlive-extra-utils
 
       - name: Run format
         run: make format

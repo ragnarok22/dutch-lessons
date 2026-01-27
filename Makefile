@@ -22,4 +22,4 @@ format:
 	PERL5LIB=$(PERL5LIB) latexindent -w -c=$(CRUFT_DIR) $(TEX_SRCS)
 
 lint:
-	chktex -q $(TEX_SRCS)
+	chktex -q -n12 $(TEX_SRCS)

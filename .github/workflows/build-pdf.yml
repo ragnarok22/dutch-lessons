@@ -21,6 +21,7 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: main.tex
+          extra_packages: tipa
 
       - name: Rename PDF
         run: mv main.pdf guia-holandes-a1.pdf

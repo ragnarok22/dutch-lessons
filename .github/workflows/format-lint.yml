@@ -26,7 +26,8 @@ jobs:
             chktex \
             texlive-latex-recommended \
             texlive-latex-extra \
-            texlive-lang-european
+            texlive-lang-european \
+            texlive-fonts-recommended
 
       - name: Run format
         run: make format

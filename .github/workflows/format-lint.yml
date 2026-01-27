@@ -1,0 +1,38 @@
+name: Format and Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  format-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install TeX tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            latexmk \
+            latexindent \
+            chktex \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-lang-european
+
+      - name: Run format
+        run: make format
+
+      - name: Ensure tree is clean after format
+        run: git diff --exit-code
+
+      - name: Run lint
+        run: make lint

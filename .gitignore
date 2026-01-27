@@ -1,65 +1,11 @@
-# LaTeX build files
+# Archivos auxiliares de LaTeX
 *.aux
 *.log
-*.out
 *.toc
-*.lof
-*.lot
+*.out
 *.fls
 *.fdb_latexmk
 *.synctex.gz
-*.synctex(busy)
-*.pdfsync
-
-# Build output
-*.pdf
-*.dvi
-*.ps
-
-# Bibtex/Biber
 *.bbl
-*.bcf
 *.blg
-*.run.xml
-
-# Glossaries
-*.acn
-*.acr
-*.alg
-*.glg
-*.glo
-*.gls
-*.glsdefs
-*.ist
-
-# Index
-*.idx
-*.ilg
-*.ind
-
-# Nomenclature
-*.nlo
-*.nls
-
-# Latexmk
-*.latexmk
-
-# Editor files
-*.swp
-*.swo
-*~
-.*.swp
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Build directories
-build/
-out/
-_minted-*/
-
-# Backup files
-*.bak
-*.backup
-
+*.pdf

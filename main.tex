@@ -1,0 +1,60 @@
+% Plantilla principal para "Guía y plan de estudios de holandés"
+\documentclass[12pt,oneside]{book}
+
+% Codificación y tipografía
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch,spanish]{babel} % español como idioma principal, neerlandés como secundario
+\usepackage{lmodern}
+
+% Utilidades
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Datos del proyecto
+\title{Guía y plan de estudios de holandés (A1)}
+\author{Proyecto autodidacta}
+\date{\today}
+
+\begin{document}
+\selectlanguage{spanish}
+
+\maketitle
+\tableofcontents
+
+% Capítulo 0 (sin numerar, pero en el índice)
+\cleardoublepage
+\chapter*{Capítulo 0. Cómo aprender idiomas de forma efectiva}
+\addcontentsline{toc}{chapter}{Capítulo 0. Cómo aprender idiomas de forma efectiva}
+\input{chapters/00_metodologia/main}
+
+\mainmatter
+\include{chapters/01_pronunciacion/main}
+\include{chapters/02_saludos/main}
+\include{chapters/03_pronombres_y_zijn/main}
+\include{chapters/04_articulos/main}
+\include{chapters/05_sustantivos_plural/main}
+\include{chapters/06_presentes_regulares/main}
+\include{chapters/07_irregulares_basicos/main}
+\include{chapters/08_orden_v2/main}
+\include{chapters/09_preguntas/main}
+\include{chapters/10_negacion/main}
+\include{chapters/11_modales/main}
+\include{chapters/12_numeros_fechas_horas/main}
+\include{chapters/13_familia/main}
+\include{chapters/14_comida_bebida/main}
+\include{chapters/15_ciudad_direcciones/main}
+\include{chapters/16_rutina_trabajo/main}
+\include{chapters/17_adjetivos_colores/main}
+\include{chapters/18_preposiciones/main}
+\include{chapters/19_conversaciones_a1/main}
+\include{chapters/20_repaso_a1/main}
+
+\end{document}

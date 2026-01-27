@@ -1,0 +1,8 @@
+# ChkTeX configuration for consistent behavior across platforms
+# This file ensures local (macOS 1.7.9) and CI (Ubuntu 1.7.8) produce the same results.
+
+# Suppress warnings that differ between chktex versions:
+# 12: Interword spacing (`\ ') should perhaps be used.
+# 24: Delete this space to maintain correct pagereferences.
+# 44: User Regex (intersentence space) - not always present in older versions.
+CmdLine { -n12 -n24 -n44 }

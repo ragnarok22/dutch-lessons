@@ -22,6 +22,13 @@
 ## Testing Guidelines
 - Run `make format && make lint` before committing.
 - Validate the build with `make pdf`; fix missing refs/figures and skim the PDF for accent/hyphenation issues.
+- Siempre que edites contenido, antes de entregar ejecuta `make format` y `make lint` y menciona su resultado al usuario.
+
+### Errores de lint frecuentes que hay que evitar
+- Guiones: usa `\textendash{}` para rangos o pares (ej.: “verbo\textendash{}sujeto”), no `--`.
+- Elipsis: escribe `\ldots{}` en lugar de `...`.
+- Espacios: no dejes espacio antes de signos (`?`, `!`, `.`) o flechas; sí deja espacio antes de paréntesis explicativos.
+- Intersentence spacing: tras abreviaturas con punto seguidas de texto, añade `\@` si chktex sugiere espacio extra (ej.: `A:\@` en diálogos).
 
 ## Commit & Pull Request Guidelines
 - Use Conventional Commit style from history: `type(scope): summary`, e.g., `docs(saludos): add dialogue examples`.

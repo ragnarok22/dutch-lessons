@@ -15,6 +15,7 @@ Usa el `Makefile` incluido (requiere `latexmk` instalado):
 ```bash
 make pdf   # compila main.tex a PDF
 make clean # elimina archivos auxiliares
+make dev   # recompila en vivo con latexmk -pvc
 make format # formatea main.tex y capítulos con latexindent
 make lint   # lint básico con chktex
 make help   # lista rápida de targets

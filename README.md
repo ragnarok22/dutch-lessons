@@ -2,8 +2,6 @@
 [![Build and Release PDF](../../actions/workflows/build-pdf.yml/badge.svg)](../../actions/workflows/build-pdf.yml)
 [![Format and Lint](../../actions/workflows/format-lint.yml/badge.svg)](../../actions/workflows/format-lint.yml)
 
-[![Build and Release PDF](https://github.com/ragnarok22/dutch-lessons/actions/workflows/build-pdf.yml/badge.svg)](https://github.com/ragnarok22/dutch-lessons/actions/workflows/build-pdf.yml)
-
 Este proyecto en LaTeX reúne una guía autodidacta de 20 capítulos más un capítulo 0 sobre cómo aprender idiomas. Todo el contenido está pensado para hispanohablantes que empiezan neerlandés.
 
 ## Estructura

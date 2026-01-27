@@ -13,7 +13,11 @@ Usa el `Makefile` incluido (requiere `latexmk` instalado):
 ```bash
 make pdf   # compila main.tex a PDF
 make clean # elimina archivos auxiliares
+make format # formatea main.tex y capítulos con latexindent
+make lint   # lint básico con chktex
 ```
+
+Herramientas necesarias: `latexmk`, `latexindent`, `chktex` (suelen venir con TeX Live / MacTeX). Para evitar fallos por el módulo Perl `File::HomeDir`, el target `format` exporta `PERL5LIB` apuntando a `vendor/`, donde se incluye un shim mínimo. Los backups y `indent.log` de `latexindent` se guardan en `.latexindent-cruft/` (ignorado en Git).
 
 ## Próximos pasos sugeridos
 - Completar cada capítulo con explicaciones, ejemplos y ejercicios.

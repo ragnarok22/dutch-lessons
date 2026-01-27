@@ -3,7 +3,14 @@ PERL5LIB := $(CURDIR)/vendor$(if $(PERL5LIB),:$(PERL5LIB))
 TEX_SRCS := main.tex $(shell find chapters -name 'main.tex')
 CRUFT_DIR := $(CURDIR)/.latexindent-cruft
 
-.PHONY: pdf clean format lint
+.PHONY: help pdf clean format lint
+
+help:
+	@echo "Targets disponibles:"
+	@echo "  make pdf      -> compila main.tex a PDF con latexmk"
+	@echo "  make clean    -> limpia auxiliares de latexmk"
+	@echo "  make format   -> formatea LaTeX con latexindent (usa vendor/File/HomeDir.pm)"
+	@echo "  make lint     -> lint básico con chktex"
 
 pdf:
 	$(LATEXMK) -pdf -interaction=nonstopmode main.tex

@@ -1,4 +1,4 @@
-# Archivos auxiliares de LaTeX
+# Auxiliary LaTeX files
 *.aux
 *.log
 *.toc
@@ -10,3 +10,6 @@
 *.blg
 *.pdf
 .latexindent-cruft/
+
+# OSX files
+.DS_Store
